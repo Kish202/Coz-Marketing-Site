@@ -99,14 +99,11 @@ IOS app development
   Other Services
 </h1>
 
-<li className="cursor-pointer text-black/80 hover:text-primary"> Other Services</li>
+<li ></li>
  
- <li className="cursor-primary text-black/80 hover:text-primary"> Cloud Services</li>
+ <li></li>
  
- <li className="curor-pointer text-black/80 hover:text-primary"> Mobile app</li>
- <div>
-  <img src="https://picsum.photos/180" alt="no image" />
- </div>
+ <li></li>
    </ul>
 
 </div>

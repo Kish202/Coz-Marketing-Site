@@ -105,7 +105,7 @@ IOS app development
  
  <li className="curor-pointer text-black/80 hover:text-primary"> Mobile app</li>
  <div>
-  <img src="https://picsum.photos/180" alt="no image" />
+  <img src="https://picsum.photos" alt="" />
  </div>
    </ul>
 

@@ -94,19 +94,9 @@ IOS app development
  The app development
     </li></ul>  
 
-   <ul className="mt-3 flex flex-col gap-2">
-<h1 className="pb-1 text-xl font-semibold">
-  Other Services
-</h1>
+   <ul className="">
 
-<li className="cursor-pointer text-black/80 hover:text-primary"> Other Services</li>
- 
- <li className="cursor-primary text-black/80 hover:text-primary"> Cloud Services</li>
- 
- <li className="curor-pointer text-black/80 hover:text-primary"> Mobile app</li>
- <div>
-  <img src="https://picsum.photos/180" alt="no image" />
- </div>
+
    </ul>
 
 </div>
