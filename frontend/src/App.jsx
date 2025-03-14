@@ -8,6 +8,7 @@ import BannerDetails from './components/BannerDetails.jsx/BannerDetails'
 import Banner from './components/Banner/Banner'
 import Banner1 from "./assets/blog1.jpg";
 import Banner2 from "./assets/blog3.jpg";
+import Navbar from './components/Navbar/Navbar'
 
 
 
@@ -16,7 +17,7 @@ function App() {
 
   return (
 <>
-
+<Navbar/>
 <Hero/>
 <Banner reverse={true} img={Banner1}/>
 <Banner img={Banner2}/>
