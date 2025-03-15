@@ -9,6 +9,7 @@ import Banner from './components/Banner/Banner'
 import Banner1 from "./assets/blog1.jpg";
 import Banner2 from "./assets/blog3.jpg";
 import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -16,15 +17,16 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-<>
+<div className="dark:bg-slate-900 dark:text-white">
 <Navbar/>
 <Hero/>
+<Service/>
 <Banner reverse={true} img={Banner1}/>
 <Banner img={Banner2}/>
 <BannerDetails/>
-   <Service/>
-
-   </>
+  
+<Footer/>
+   </div>
   )
 }
 

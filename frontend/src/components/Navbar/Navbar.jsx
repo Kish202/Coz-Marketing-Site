@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BiSolidSun, BiPhoneCall, BiSolidMoon } from "react-icons/bi";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import { FaCaretDown } from "react-icons/fa";
+import ResponsiveMenu from "./ResponsiveMenu";
 
 function Navbar() {
  
@@ -15,6 +16,8 @@ function Navbar() {
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+
 
   useEffect(() => {
     if (theme === "dark") {
@@ -76,18 +79,28 @@ function Navbar() {
                     />
                   </div>
 
-                  <div className=" col-span-2  border border-yellow-900">
-   <div className="grid grid-cols-3 border border-violet-900 gap-2">
-                    <div>
+                  <div className=" flex  col-span-2">
+   
+   
+                  {/* <div>
                     <h1 className="pb-3 text-slate-600 text-xl font-semibold">BesT Selling</h1>
                     <p className="text-sm text-slate-600  ">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Illo, amet.
                     </p>
-                    </div>
+                   </div> */}
 
-                    <div className="grid grid-cols-3 gap-12">
-                      <ul className="mt-3 pb-10 flex flex-col gap-2 border border-violet-900">
+   <div className="grid grid-cols-3 gap-2">
+   <div>
+                    <h1 className="pb-3 mt-2  text-xl m-1 font-semibold">BesT Selling</h1>
+                <p className="text-sm m-1 ">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Illo, amet.
+                    </p>
+                   </div> 
+
+                    <div className="grid grid-cols-3 col-span-2  gap-12">
+                      <ul className="mt-3 pb-10 flex flex-col gap-2 ">
                         <h1 className="pb-1 text-xl font-semibold">
                           Development
                         </h1>
@@ -123,11 +136,13 @@ function Navbar() {
                         <li className="curor-pointer text-black/80 hover:text-primary">
                           {" "}
                           Mobile app
+                      
                         </li>
-                        <div>
-                          <img src="https://picsum.photos/180" alt="no image" />
+                        </ul>
+                        <div className="overflow-hidden max-h-[700px]">
+                          <img className="max-h-[700px] w-full mt-2 rounded-b-3xl object-fill" src="https://picsum.photos/180" alt="no image" />
                         </div>
-                      </ul>
+                     
                     </div>
                  
                  </div> </div>
@@ -203,7 +218,9 @@ function Navbar() {
               />
             )}
           </div>
+     
       </nav>
+   <ResponsiveMenu showMenu={showMenu} />
     </header>
   );
 }
