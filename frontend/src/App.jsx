@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import Service from './components/Service/Service'
 import Hero from './components/Hero/Hero'
@@ -18,7 +17,7 @@ import {useEffect} from "react"
 
 function App() {
  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark",
   );
   const [showMenu, setShowMenu] = useState(false);
 
