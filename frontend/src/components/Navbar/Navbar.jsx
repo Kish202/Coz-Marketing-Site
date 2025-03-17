@@ -4,14 +4,15 @@ import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import { FaCaretDown } from "react-icons/fa";
 import ResponsiveMenu from "./ResponsiveMenu";
 
-function Navbar() {
+function Navbar({theme, setTheme}) {
  
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
-  );
+  
+  
+ 
+ 
   const [showMenu, setShowMenu] = useState(false);
 
-  const element = document.documentElement;
+
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -19,19 +20,8 @@ function Navbar() {
 
 
 
-  useEffect(() => {
-    if (theme === "dark") {
-      element.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      console.log("dark theme");
-    } else {
-      element.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      console.log("light theme");
-    }
-                  }, [theme]);
   return (
-    <header className="relative z-20 border-b-[1px] border-primary/50 bg-gradient-to-t from-violet-900 via-violet-600 to-violet-900 text-white shadow-lg">
+    <header className="relative  border-b-[1px] border-primary/50 bg-gradient-to-t from-violet-900 via-violet-600 to-violet-900 text-white dark:bg-gradient-to-t dark:from-violet-900 dark:via-violet-950 dark:to-violet-900 shadow-lg">
       <nav className="container flex h-[70px] items-center justify-between py-2">
         <div className="text-2xl text-white md:text-3xl">
           <a href="/#home ">
@@ -220,7 +210,7 @@ function Navbar() {
           </div>
      
       </nav>
-   <ResponsiveMenu showMenu={showMenu} />
+   <ResponsiveMenu showMenu={showMenu}  setShowMenu={setShowMenu} />
     </header>
   );
 }

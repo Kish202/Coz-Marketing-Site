@@ -9,7 +9,7 @@ import {
 
 function Footer() {
   return (
-    <div className="rounded-t-3xl bg-gradient-to-r from-violet-950 to-violet-900">
+    <div className=" bg-gradient-to-r from-violet-950 to-violet-900 border-t-4 border-violet-900 ">
    <section className=" mx-auto max-w-[1200px] text-white">
     <div className="grid py-5 md:grid-cols-3">
 <div className="px-4 py-8">
@@ -105,20 +105,20 @@ abouT us
    Subscribe to our newsletter.
 </h1>
 <input
-className="rounded-full px-3 py-1 text-black focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 "
+className="rounded-full px-3 py-1 max-md:mx-1 text-black focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 "
 type="text" placeholder='Email'
 />
 
 
-<div className="flex items-center gap-3 mt-6">
-<a  href="#" className="duration-200 hover:scale-105">
-<FaInstagram className="text-2xl text-white" />
+<div className="flex items-center  mt-6">
+<a  href="#" className="duration-200 hover:scale-105 px-2">
+<FaInstagram className="text-2xl text-white  " />
 </a>
 <a href="#
-" className="duration-200 hover:scale-105"> <FaFacebook className="text-2xl"/></a>
+" className="duration-200 hover:scale-105 px-2"> <FaFacebook className="text-2xl"/></a>
 
   <a href="#
-" className="duration-200 hover:scale-105"></a>
+" className="duration-200 hover:scale-105 px-1"></a>
 <FaLinkedin className="text-2xl"/>
 </div>
 
