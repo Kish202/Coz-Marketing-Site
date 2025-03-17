@@ -16,7 +16,7 @@ Follow these steps to set up and run the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Kish202/Coz-Marketing-Site.git
    cd frontend
    ```
 
