@@ -134,7 +134,9 @@ function Footer() {
           </div>
         </div>
 
-        <div className="border-t-2 border-gray-300/50 py-6 text-center">
+
+
+        <div className="border-t-2 border-gray-300/50  py-2 md:py-6 text-center">
           @copyright 2025 Travery || Me
         </div>
       </section>
