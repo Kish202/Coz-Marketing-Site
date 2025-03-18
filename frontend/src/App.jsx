@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import "aos/dist/aos.css"
 import './App.css'
 import Service from './components/Service/Service'
 import Hero from './components/Hero/Hero'

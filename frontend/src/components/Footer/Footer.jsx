@@ -30,11 +30,11 @@ function Footer() {
             <div className="flex items-center gap-3  cursor-pointer duration:300 mt-2">
               <FaLocationArrow className="text-primary  cursor-pointer" />
               <a href="#">
-                <p>Noida, Uttar Pradesh</p>
+                <p>Jammu, Jammu & Kashmir</p>
               </a>
             </div>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2.5">
               <FaMobileAlt className="text-primary" />
               <p>+91 1234567890</p>
             </div>
@@ -101,9 +101,9 @@ function Footer() {
                   Social Links
                 </h1>
                 <div className=" flex flex-col gap-3 line-clamp-1">
-                  <h1 className="pt-2 pb-1 ">Subscribe to our newsletter.</h1>
+                  <h1 className="pt-2 pb-1 px-2">Subscribe to our newsletter.</h1>
                   <input
-                    className="rounded-full px-3 py-1 max-md:mx-1 text-black focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 "
+                    className="rounded-full mx-1.5 px-2 py-1 max-md:mx-1 text-black focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 "
                     type="text"
                     placeholder="Email"
                   />
@@ -120,13 +120,11 @@ function Footer() {
                       {" "}
                       <FaFacebook className="text-2xl" />
                     </a>
-
-                    <a
-                      href="#
-"
-                      className="duration-200 hover:scale-105 px-1"
-                    ></a>
-                    <FaLinkedin className="text-2xl" />
+      <a
+                      href="#"
+                    className="duration-300 cursor-pointer hover:scale-105 px-1"
+                    >  <FaLinkedin className="text-2xl" /></a>
+                   
                   </div>
                 </div>
               </div>
@@ -137,7 +135,7 @@ function Footer() {
 
 
         <div className="border-t-2 border-gray-300/50  py-2 md:py-6 text-center">
-          @copyright 2025 Travery || Me
+    @copyright 2025 Tania || Me
         </div>
       </section>
     </div>

@@ -4,7 +4,7 @@ import CountUp from "react-countup"
 const Service =() =>{
   return (
     <section className="container h-12 md:h-32 ">
-     <div className="grid grid-cols-4 w-full mx-auto -translate-y-10 divde-x divide-slate-700 place-self-center   bg-lime-100 p-4 shadow-lg dark:bg-violet-800 dark:text-white/70 md:max-w-[800px]  md:p-8">
+     <div className="grid grid-cols-4 w-full mx-auto -translate-y-12 divde-x divide-slate-700 place-self-center   bg-lime-100 p-4 shadow-lg dark:bg-violet-800 dark:text-white/70 md:max-w-[800px]  md:p-8">
     <div className="flex flex-col items-center justify-center " >
 
 
