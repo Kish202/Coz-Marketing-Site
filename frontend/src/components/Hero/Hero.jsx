@@ -78,13 +78,13 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <main className="bg-gradient-to-r from-violet-950 to-violet-900 pt-20 dark:bg-violet-950">
+    <main className="bg-gradient-to-r from-violet-950 to-violet-900 pt-2 dark:bg-violet-950">
       <section className="container flex h-[650px] flex-col items-center justify-center md:h-[500px] ">
         <div className="grid grid-cols-1 items-center gap-8 dark:text-white md:grid-cols-2">
           <div
             data-aos="fade-right"
-            data-aos-duration="400"
-            data-aos-once="true"
+            data-aos-duration="700"
+            data-aos-once="false"
             className="flex flex-col items-center gap-4 text-center text-white md:items-start md:text-left "
           >
             <h1 className=" text-4xl ">
@@ -107,7 +107,7 @@ const Hero = () => {
           <div
             data-aos="fade-left"
             data-aos-duration="400"
-            data-aos-once="true"
+            data-aos-once="false"
             className="mx-auto max-w-xs p-4"
           >
             <img src={Banner} alt="No image" className="hover:drop-shadow-md" />

@@ -327,7 +327,7 @@ const Swipe = () => {
 
     return (
         <div className="slider-container" style={{ position: "relative", width: "100%", overflow: "hidden" }}>
-            <div className="container px-6 py-10">
+            <div className="container px-6 py-10 border border-yellow-950">
                 <h1 className="mb-8 inline-block border-b-2 border-primary py-2 text-3xl font-bold">
                     Explore
                 </h1>

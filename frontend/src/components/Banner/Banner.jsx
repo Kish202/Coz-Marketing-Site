@@ -13,8 +13,9 @@ return (
 
  <div 
  data-aos="fade-right"
- data-aos-duration="400"
- data-aos-once="true"
+ data-aos-duration="600"
+ data-aos-once="false"
+data-aos-delay="100"
 
  
  className={`flex flex-col items-start gap-4 text-left md:p-8 ${reverse ? "md:order-last": ""}`}>
@@ -56,9 +57,10 @@ GET Started
             
  <div
  data-aos="fade-left"
- data-aos-duration="400"
- data-aos-once="true"
- 
+ data-aos-duration="600"
+ data-aos-once="false"
+ data-aos-delay="200"
+ data-aos-mirror="true"
  className={reverse?"order-1":""}>
     <img 
     src={img} 
