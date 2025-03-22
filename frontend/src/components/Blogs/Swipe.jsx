@@ -230,6 +230,12 @@ const Swipe = () => {
         pauseOnHover: true,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
+        touchMove:false,
+        swipe:false,
+       
+        // Disable touch movement
+        draggable: false,     // Disable mouse dragging
+        swipeToSlide: false,
         responsive: [
             {
                 breakpoint: 1024,
@@ -257,34 +263,56 @@ const Swipe = () => {
         
         const styleEl = document.createElement('style');
         const css = `
-            .slick-slider {
-                position: relative;
-                display: block;
-                box-sizing: border-box;
-                user-select: none;
-                touch-action: pan-y;
-                -webkit-touch-callout: none;
-                -webkit-tap-highlight-color: transparent;
-                width: 100%;
-                margin: 0 -8px;
-            }
-            
-            .slick-list {
-                position: relative;
-                display: block;
-                overflow: hidden;
-                margin: 0;
-                padding: 0;
-            }
-            
-            .slick-slide {
-                padding: 0 8px;
-                box-sizing: border-box;
-                float: left;
-                height: 100%;
-                min-height: 1px;
-                display: block !important;
-            }
+            body, html {
+            overflow-x: hidden;  /* Prevent horizontal scrolling on the entire page */
+        }
+        
+        .slider-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .slick-slider {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            user-select: none;
+            touch-action: pan-y;  /* Disable all touch actions */
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
+            width: 100%;
+            margin: 0;
+            padding: 0 -8px
+            ;
+        }
+        
+        .slick-list {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        
+        .slick-track {
+            display: flex;
+            margin-left: 0;
+            margin-right: 0;
+            // width: 100% !important;
+            // transform: none !important;
+        }
+        
+        .slick-slide {
+            padding: 0 8px;
+            box-sizing: border-box;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+            display: block !important;
+            width: auto !important;
+        }
             
             .slick-initialized .slick-slide {
                 display: block;
@@ -302,13 +330,24 @@ const Swipe = () => {
                 display: none;
             }
             
-            .slick-track {
-                display: flex;
-                margin-left: 0;
-                margin-right: 0;
-            }
+           
         `;
         
+        const preventTouchMove = (e) => {
+            const sliderElement = document.querySelector('.slider-container');
+            if (!sliderElement.contains(e.target)) {
+                e.preventDefault();
+            }
+        };
+
+
+
+
+
+        document.addEventListener('touchmove', preventTouchMove, { passive: false });
+    
+       
+
         styleEl.textContent = css;
         document.head.appendChild(styleEl);
         
@@ -321,13 +360,14 @@ const Swipe = () => {
         
         return () => {
             document.head.removeChild(styleEl);
+            document.removeEventListener('touchmove', preventTouchMove);
             clearTimeout(timer);
         };
     }, [mounted]);
 
     return (
         <div className="slider-container" style={{ position: "relative", width: "100%", overflow: "hidden" }}>
-            <div className="container px-6 py-10 border border-yellow-950">
+            <div className="container px-6 py-10 ">
                 <h1 className="mb-8 inline-block border-b-2 border-primary py-2 text-3xl font-bold">
                     Explore
                 </h1>
