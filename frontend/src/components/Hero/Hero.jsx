@@ -79,6 +79,12 @@ import React from "react";
 const Hero = () => {
   return (
     <main className="bg-gradient-to-r from-violet-950 to-violet-900 pt-2 dark:bg-violet-950">
+      <div 
+             className="absolute -left-60 top-80 -translate-y-1/2 w-full h-48 rounded-full transform  rotate-12 blur-xl opacity-70"
+        style={{
+          background: 'radial-gradient(ellipse, rgba(56, 189, 248, 0.3) 0%, rgba(125, 211, 252, 0.2) 40%, transparent 70%)'
+        }}
+   ></div>
       <section className="container flex h-[650px] flex-col items-center justify-center md:h-[500px] ">
         <div className="grid grid-cols-1 items-center gap-8 dark:text-white md:grid-cols-2">
           <div
@@ -87,10 +93,10 @@ const Hero = () => {
             data-aos-once="false"
             className="flex flex-col items-center gap-4 text-center text-white md:items-start md:text-left "
           >
-            <h1 className=" text-4xl ">
+            <h1 className=" text-5xl font-extrabold ">
               We Build Apps That Get Trending On Appworld
             </h1>
-            <p className="">
+            <p className="font-semibold ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
               ducimus eius quis ad enim aliquid iusto eum nihil exercitationem
               necessitatibus?
