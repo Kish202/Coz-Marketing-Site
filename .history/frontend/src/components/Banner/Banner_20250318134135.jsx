@@ -17,7 +17,6 @@ return (
  data-aos-once="false"
 data-aos-delay="100"
 
-
  
  className={`flex flex-col items-start gap-4 text-left md:p-8 ${reverse ? "md:order-last": ""}`}>
  <h1 className="text-2xl md:text-4xl">
