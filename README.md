@@ -1,7 +1,7 @@
 # Web Frontend for Marketing Brands
 
 ## Overview
- It highlights creative UI/UX skills using modern frontend technologies. The project focuses on delivering an engaging and visually appealing interface for potential clients and businesses.
+ It highlights creative UI/UX skills using modern frontend technologies.
 
 ## https://coz-nine.vercel.app/
 
