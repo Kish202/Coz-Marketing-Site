@@ -61,7 +61,7 @@ function Navbar({theme, setTheme}) {
 
               <div className="absolute left-0 z-[9999] hidden w-full rounded-b-3xl bg-white p-2 text-black group-hover:block">
                 <div className="grid grid-cols-3 gap-5">
-                  <div className="overflow-hidden">
+                  <div className=" overflow-hidden">
                     <img
                       className="max-h-[300px] w-full rounded-b-3xl object-fill"
                       src="https://picsum.photos/200"

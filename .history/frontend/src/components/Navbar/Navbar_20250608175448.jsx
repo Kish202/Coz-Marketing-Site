@@ -21,7 +21,7 @@ function Navbar({theme, setTheme}) {
 
 
   return (
-    <header className="relative  border-b-[1px] border-primary/50 bg-gradient-to-t from-violet-900 via-violet-600 to-violet-900 text-white dark:bg-gradient-to-t dark:from-violet-900 dark:via-violet-950 dark:to-violet-900 font-sans shadow-lg ">
+    <header className="relative  border-b-[1px] border-primary/50 bg-gradient-to-t from-violet-900 via-violet-600 to-violet-900 text-white dark:bg-gradient-to-t dark:from-violet-900 dark:via-violet-950 dark:to-violet-900 shadow-lg font-poppins">
       <nav className="container flex h-[70px] items-center justify-between py-2">
         <div className="text-2xl text-white md:text-3xl">
           <a href="/#home ">
@@ -61,7 +61,7 @@ function Navbar({theme, setTheme}) {
 
               <div className="absolute left-0 z-[9999] hidden w-full rounded-b-3xl bg-white p-2 text-black group-hover:block">
                 <div className="grid grid-cols-3 gap-5">
-                  <div className="overflow-hidden">
+                  <div className=" overflow-hidden">
                     <img
                       className="max-h-[300px] w-full rounded-b-3xl object-fill"
                       src="https://picsum.photos/200"
@@ -82,15 +82,15 @@ function Navbar({theme, setTheme}) {
 
    <div className="grid grid-cols-3 gap-2">
    <div>
-                    <h1 className="pb-1 mt-3  text-xl m-1 font-semibold"> The Best Selling</h1>
-                <p className="text-sm ">
+                    <h1 className="pb-3 mt-2  text-xl m-1 font-semibold">BEST Selling</h1>
+                <p className="text-sm m-1 ">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Illo, amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum odio sint excepturi,
                        magnam molestiae quidem distinctio dolor quaerat tenetur tempore?
                     </p>
                    </div> 
 
-                    <div className="grid grid-cols-3 col-span-2  gap-12 ">
+                    <div className="grid grid-cols-3 col-span-2  gap-12">
                       <ul className="mt-3 pb-10 flex flex-col gap-2 ">
                         <h1 className="pb-1 text-xl font-semibold">
                           Development

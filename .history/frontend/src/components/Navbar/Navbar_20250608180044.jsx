@@ -61,7 +61,7 @@ function Navbar({theme, setTheme}) {
 
               <div className="absolute left-0 z-[9999] hidden w-full rounded-b-3xl bg-white p-2 text-black group-hover:block">
                 <div className="grid grid-cols-3 gap-5">
-                  <div className="overflow-hidden">
+                  <div className=" overflow-hidden">
                     <img
                       className="max-h-[300px] w-full rounded-b-3xl object-fill"
                       src="https://picsum.photos/200"
@@ -92,7 +92,7 @@ function Navbar({theme, setTheme}) {
 
                     <div className="grid grid-cols-3 col-span-2  gap-12 ">
                       <ul className="mt-3 pb-10 flex flex-col gap-2 ">
-                        <h1 className="pb-1 text-xl font-semibold">
+                        <h1 className="pb-1 text-xl font-semibold border border-yellow-700">
                           Development
                         </h1>
 

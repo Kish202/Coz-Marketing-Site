@@ -27,7 +27,7 @@ Clients
   <h1 className="text-sm text-black/80 sm:text-lg md:text-3xl dark:text-white font-bold">
   <CountUp end={57} suffix="+" duratiion={2.75}/>  </h1>  
 
-    <h1 className="sm:text-md font-bold  md:text-lg ">
+    <h1 className="sm:text-md font-bold  md:text-lg from-neutral-200 ">
         Projects
         
         </h1>        

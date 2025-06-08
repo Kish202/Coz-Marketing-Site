@@ -97,7 +97,7 @@ const Hero = () => {
       <h1 className="text-5xl font-extrabold">
               We Build Apps That Get Trending On Appworld
             </h1>
-            <p className="font-semibold ">
+            <p className=" font-semibold ">
   <Typewriter text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
               ducimus eius quis ad enim aliquid iusto eum nihil exercitationem
           necessitatibus?" delay={200} />

@@ -74,7 +74,6 @@ import Banner from "../../assets/thebanner.svg"
 
 
 import React from "react";
-import Typewriter from "../../Typewriter";
 // import Banner from "../../assets/undraw_real_time_sync_re_nky7.svg";
 
 const Hero = () => {
@@ -94,13 +93,13 @@ const Hero = () => {
             data-aos-once="false"
             className="flex flex-col items-center gap-4 text-center text-white md:items-start md:text-left "
           >
-      <h1 className="text-5xl font-extrabold">
+            <h1 className="text-5xl font-extrabold">
               We Build Apps That Get Trending On Appworld
             </h1>
             <p className="font-semibold ">
-  <Typewriter text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
               ducimus eius quis ad enim aliquid iusto eum nihil exercitationem
-          necessitatibus?" delay={200} />
+              necessitatibus?
             </p>
             <div className="space-x-4">
               <button className="rounded-md border-2 border-primary bg-primary px-4 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80">

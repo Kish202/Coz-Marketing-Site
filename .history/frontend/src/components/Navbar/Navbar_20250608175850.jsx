@@ -61,7 +61,7 @@ function Navbar({theme, setTheme}) {
 
               <div className="absolute left-0 z-[9999] hidden w-full rounded-b-3xl bg-white p-2 text-black group-hover:block">
                 <div className="grid grid-cols-3 gap-5">
-                  <div className="overflow-hidden">
+                  <div className=" overflow-hidden">
                     <img
                       className="max-h-[300px] w-full rounded-b-3xl object-fill"
                       src="https://picsum.photos/200"
@@ -82,8 +82,8 @@ function Navbar({theme, setTheme}) {
 
    <div className="grid grid-cols-3 gap-2">
    <div>
-                    <h1 className="pb-1 mt-3  text-xl m-1 font-semibold"> The Best Selling</h1>
-                <p className="text-sm ">
+                    <h1 className="pb-3 mt-3    border border-yellow-950  text-xl m-1 font-semibold"> The Best Selling</h1>
+                <p className="text-sm m-1 ">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Illo, amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum odio sint excepturi,
                        magnam molestiae quidem distinctio dolor quaerat tenetur tempore?

@@ -4,7 +4,7 @@ import CountUp from "react-countup"
 const Service =() =>{
   return (
     <section className="container h-12 md:h-32 ">
-     <div className="grid grid-cols-4 w-full mx-auto -translate-y-12 divide-x divide-violet-900 place-self-center   bg-lime-100 p-4  dark:bg-violet-800 dark:text-white/70 md:max-w-[800px] rounded-xl shadow-inner  shadow-violet-950 md:p-8">
+     <div className="grid grid-cols-4 w-full mx-auto -translate-y-12 divde-x divide-slate-700 place-self-center   bg-lime-100 p-4  dark:bg-violet-800 dark:text-white/70 md:max-w-[800px] rounded-xl shadow-inner shadow-2xl   shadow-white  md:p-8">
     <div className="flex flex-col items-center justify-center " >
 
 
@@ -27,7 +27,7 @@ Clients
   <h1 className="text-sm text-black/80 sm:text-lg md:text-3xl dark:text-white font-bold">
   <CountUp end={57} suffix="+" duratiion={2.75}/>  </h1>  
 
-    <h1 className="sm:text-md font-bold  md:text-lg ">
+    <h1 className="sm:text-md font-bold  md:text-lg">
         Projects
         
         </h1>        

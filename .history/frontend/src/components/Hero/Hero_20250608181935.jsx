@@ -100,7 +100,7 @@ const Hero = () => {
             <p className="font-semibold ">
   <Typewriter text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
               ducimus eius quis ad enim aliquid iusto eum nihil exercitationem
-          necessitatibus?" delay={200} />
+          necessitatibus?" delay={100} />
             </p>
             <div className="space-x-4">
               <button className="rounded-md border-2 border-primary bg-primary px-4 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80">
