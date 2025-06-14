@@ -20,7 +20,7 @@ function Footer() {
               </a>
             </h1>
 
-            <p className="pb-2">
+            <p className="pb-2 pt-1">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
               illum facilis nostrum. Eligendi enim illum fuga tenetur odio?
               Debitis animi inventore totam fugit! Optio eligendi quisquam
